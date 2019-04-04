@@ -2,7 +2,7 @@
 <view>
   <scroll-view class='scroll-view' scroll-y='true'>
     <block wx:for='{{array}}'>
-      <view class='scroll-item'>{{item}}</view>
+      <view data-text='{{item}}' class='scroll-item' bindtap='enterView'>{{item}}</view>
     </block>
   </scroll-view>
 </view>
