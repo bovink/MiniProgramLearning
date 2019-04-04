@@ -1,0 +1,5 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <text>{{text}}</text>
+  <button hover-class='button-hover' type='default' plain='false' bindtap='click_btn'>nihao</button>
+</view>

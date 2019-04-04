@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<!-- <scroll-view
+  class='mine-view'
+  scroll-y='false'
+  bindscroll='scroll'
+  bindscrolltoupper='upper'
+  bindscrolltolower='lower'
+  bindtap='enterView'
+  scroll-into-view='{{toView}}'
+  >
+
+  <view class='view-item' id='red'></view>
+  <view class='view-item' id='blue'></view>
+  <view class='view-item' id='yellow'></view>
+  <view class='view-item' id='black'></view>
+  <view class='view-item' id='green'></view>
+</scroll-view> -->
+<scroll-view
+  class='horizontal-view'
+  scroll-x='true'
+  bindtap='enterView'
+  bindscrolltoupper='upper'
+  bindscrolltolower='lower'
+  
+  >
+  <view class='view-item' id='red' ></view>
+  <view class='view-item' id='blue' ></view>
+
+  
+</scroll-view>

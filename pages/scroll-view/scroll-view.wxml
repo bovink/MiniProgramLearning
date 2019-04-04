@@ -1,0 +1,15 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+<view>
+  <view>垂直滚动视图</view>
+  <scroll-view class='vertical-view' scroll-y='true'>
+    <block wx:for='{{array}}' wx:for-item='item'>
+      <view class='vertical-item' style='background-color: {{item.color}};'>{{item.text}}</view>
+    </block>
+  </scroll-view>
+  <view>水平滚动视图</view>
+  <scroll-view class='horizontal-view' scroll-x='true'>
+    <block wx:for='{{array}}' wx:for-item='item'>
+      <view class='horizontal-item' style='background-color: {{item.color}};'>{{item.text}}</view>
+    </block>
+  </scroll-view>
+</view>

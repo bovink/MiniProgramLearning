@@ -1,0 +1,32 @@
+/**index.wxss**/
+
+
+.mine-view {
+  height: 1000rpx;
+  display: flex;
+  flex-direction: row;
+}
+.horizontal-view {
+  width: 100%;
+  white-space: nowrap;
+}
+.view-item {
+  width: 500rpx;
+  height: 500rpx;
+  display: inline-block;
+}
+#red {
+  background-color: red;
+}
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
+#black {
+  background-color: black;
+}
+#yellow {
+  background-color: yellow;
+}
