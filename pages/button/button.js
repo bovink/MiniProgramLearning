@@ -1,6 +1,7 @@
 // pages/button/button.js
 
-const array = ['primary', 'default', 'warn']
+const typeArray = ['primary', 'default', 'warn']
+const sizeArray = ['default', 'mini']
 
 Page({
 
@@ -8,20 +9,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    type: 'primary'
+    type: 'primary',
+    size: 'mini'
   },
 
+  // 改变按钮类型
   changeBtnType: function(e) {
     var currentType
-    for (var i = 0; i < array.length; i++) {
-      if (this.data.type == array[i]) {
+    for (var i = 0; i < typeArray.length; i++) {
+      if (this.data.type == typeArray[i]) {
         var index
-        if (i == array.length - 1) {
+        if (i == typeArray.length - 1) {
           index = 0
         } else {
           index = i + 1
         }
-        currentType = array[index]
+        currentType = typeArray[index]
         break;
       }
     }
@@ -31,6 +34,29 @@ Page({
       type: currentType
     })
   },
+
+  // 改变按钮尺寸
+  changeBtnSize: function (e) {
+    var currentSize
+    for (var i = 0; i < sizeArray.length; i++) {
+      if (this.data.size == sizeArray[i]) {
+        var index
+        if (i == sizeArray.length - 1) {
+          index = 0
+        } else {
+          index = i + 1
+        }
+        currentSize = sizeArray[index]
+        break;
+      }
+    }
+    console.log(currentSize)
+
+    this.setData({
+      size: currentSize
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

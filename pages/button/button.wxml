@@ -1,7 +1,10 @@
 <!--pages/button/button.wxml-->
 <view>
-  <button type='{{type}}' bindtap='changeBtnType'>按钮1</button>
-  <button type='default'>按钮2</button>
-  <button type='warn'>按钮3</button>
+  <view class='content'>
+    <button class='btn' type='{{type}}' size='{{size}}'>按钮</button>
+  </view>
+
+  <button bindtap='changeBtnType'>点击按钮改变类型</button>
+  <button bindtap='changeBtnSize'>点击按钮改变大小</button>
 
 </view>
