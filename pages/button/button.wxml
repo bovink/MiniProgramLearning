@@ -1,0 +1,7 @@
+<!--pages/button/button.wxml-->
+<view>
+  <button type='{{type}}' bindtap='changeBtnType'>按钮1</button>
+  <button type='default'>按钮2</button>
+  <button type='warn'>按钮3</button>
+
+</view>
