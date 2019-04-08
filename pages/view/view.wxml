@@ -1,5 +1,5 @@
 <!--pages/view/view.wxml-->
-<view class='container'>
+<view class='container-view'>
   <view class='content-item red'>1</view>
   <view class='content-item blue'>2</view>
   <view class='content-item yellow'>3</view>

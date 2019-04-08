@@ -1,6 +1,8 @@
 /* pages/view/view.wxss */
 
-.container {
+.container-view {
+  display: flex;
+  flex-direction: row-reverse;
   background-color: aqua;
 }
 
