@@ -1,16 +1,17 @@
 // pages/button/button.js
+
 const array = ['primary', 'default', 'warn']
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
     type: 'primary'
   },
+
   changeBtnType: function(e) {
-    // console.log(type)
     var currentType
     for (var i = 0; i < array.length; i++) {
       if (this.data.type == array[i]) {
@@ -21,7 +22,6 @@ Page({
           index = i + 1
         }
         currentType = array[index]
-        
         break;
       }
     }
