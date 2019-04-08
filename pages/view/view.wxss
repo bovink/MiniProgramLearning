@@ -1,15 +1,19 @@
 /* pages/view/view.wxss */
 
-.view-item {
+.container {
+  background-color: aqua;
+}
+
+.content-item {
   width: 50rpx;
   height: 50rpx;
 }
-.view-item.bc-red {
+.red {
   background-color: red;
 }
-.view-item.bc-blue {
+.blue {
   background-color: blue;
 }
-.view-item.bc-green {
-  background-color: green;
+.yellow {
+  background-color: yellow;
 }
