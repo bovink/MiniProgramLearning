@@ -8,7 +8,8 @@
     "pages/image/image",
     "pages/scroll-view/scroll-view",
     "pages/video/video",
-    "pages/button/button"
+    "pages/button/button",
+    "pages/checkbox/checkbox"
   ],
   "window": {
     "backgroundTextStyle": "light",
