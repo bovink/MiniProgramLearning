@@ -1,6 +1,8 @@
 <!--pages/view/view.wxml-->
-<view class='container'>
-  <view class='content-item red'>1</view>
-  <view class='content-item blue'>2</view>
-  <view class='content-item yellow'>3</view>
+<view class='root'>
+  <view class='horizontal-view' style='display: flex;flex-direction: row;'>
+    <view class='view-item bc-red'>1</view>
+    <view class='view-item bc-green'>2</view>
+    <view class='view-item bc-blue'>3</view>
+  </view>
 </view>
