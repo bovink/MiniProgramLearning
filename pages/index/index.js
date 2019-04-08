@@ -4,7 +4,8 @@ Page({
     array: [
       'scroll-view',
       'video',
-      'button'
+      'button',
+      'checkbox'
     ]
   },
   enterView: function(e) {
