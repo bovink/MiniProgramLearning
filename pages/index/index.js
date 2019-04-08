@@ -2,7 +2,8 @@
 Page({
   data: {
     array: [
-      'scroll-view'
+      'scroll-view',
+      'video'
     ]
   },
   enterView: function(e) {

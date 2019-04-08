@@ -6,7 +6,8 @@
     "pages/view/view",
     "pages/swiper/swiper",
     "pages/image/image",
-    "pages/scroll-view/scroll-view"
+    "pages/scroll-view/scroll-view",
+    "pages/video/video"
   ],
   "window": {
     "backgroundTextStyle": "light",
