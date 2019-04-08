@@ -29,8 +29,8 @@
         "selectedIconPath": "icon/icon.png"
       },
       {
-        "pagePath": "pages/swiper/swiper",
-        "text": "视图",
+        "pagePath": "pages/view/view",
+        "text": "布局",
         "iconPath": "icon/icon.png",
         "selectedIconPath": "icon/icon.png"
       }
