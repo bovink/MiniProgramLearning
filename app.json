@@ -42,6 +42,12 @@
         "text": "API",
         "iconPath": "icon/icon.png",
         "selectedIconPath": "icon/icon.png"
+      },
+      {
+        "pagePath": "pages/api/tabbar/tabbar",
+        "text": "TabBar",
+        "iconPath": "icon/icon.png",
+        "selectedIconPath": "icon/icon.png"
       }
     ]
   }
