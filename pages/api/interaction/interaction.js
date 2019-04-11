@@ -8,7 +8,8 @@ Page({
     array: [
       '显示消息提示框',
       '显示Loading提示框',
-      '显示模拟对话框'
+      '显示模拟对话框',
+      '显示操作菜单'
     ]
   },
 
@@ -23,6 +24,9 @@ Page({
         break
       case 2:
         this.showModal()
+        break
+      case 3:
+        this.showActionSheet()
         break
       default:
         break
@@ -59,6 +63,18 @@ Page({
         } else if (res.cancel) {
           console.log('用户点击取消')
         }
+      }
+    })
+  },
+
+  showActionSheet: function() {
+    wx.showActionSheet({
+      itemList: [
+        '按钮1',
+        '按钮2'
+      ],
+      success: function(res) {
+        console.log(res.tapIndex)
       }
     })
   },
