@@ -1,4 +1,0 @@
-/* pages/mine/mine.wxss */
-.button-hover{
-  background-color: red;
-}
