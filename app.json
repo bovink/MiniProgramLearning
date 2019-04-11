@@ -8,7 +8,8 @@
     "pages/scroll-view/scroll-view",
     "pages/video/video",
     "pages/button/button",
-    "pages/checkbox/checkbox"
+    "pages/checkbox/checkbox",
+    "pages/api/api"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,6 +31,12 @@
       {
         "pagePath": "pages/view/view",
         "text": "布局",
+        "iconPath": "icon/icon.png",
+        "selectedIconPath": "icon/icon.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "API",
         "iconPath": "icon/icon.png",
         "selectedIconPath": "icon/icon.png"
       }
