@@ -1,2 +1,4 @@
 <!--pages/api/interaction/interaction.wxml-->
-<text>pages/api/interaction/interaction.wxml</text>
+<view style='width:100%;height:100%;background-color:aaa;'>
+  <view>显示Toast</view>
+</view>
