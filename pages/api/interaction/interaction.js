@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array: [
+      '显示Toast',
+      '显示Loading'
+    ]
+  },
+  enterView: function(e) {
+    console.log(e)
   },
 
   /**
