@@ -1,2 +1,8 @@
 <!--pages/api/api.wxml-->
-<text>pages/api/api.wxml</text>
+<view>
+  <scroll-view class='scroll-view' scroll-y='true'>
+    <block wx:for='{{array}}'>
+      <view data-text='{{item}}' class='scroll-item' bindtap='enterView'>{{item}}</view>
+    </block>
+  </scroll-view>
+</view>
