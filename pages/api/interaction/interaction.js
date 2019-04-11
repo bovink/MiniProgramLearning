@@ -57,6 +57,11 @@ Page({
     wx.showModal({
       title: '这是一个标题',
       content: '这是展示的内容',
+      showCancel: true,
+      cancelText: '取消按钮',
+      cancelColor: '#ff66c1',
+      confirmText: '确认按钮',
+      confirmColor: '#cccccc',
       success: function(res) {
         if (res.confirm) {
           console.log('用户点击确定')
@@ -73,6 +78,7 @@ Page({
         '按钮1',
         '按钮2'
       ],
+      itemColor: '#ff662c',
       success: function(res) {
         console.log(res.tapIndex)
       }
