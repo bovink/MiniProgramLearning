@@ -1,21 +1,11 @@
-// pages/api/api.js
+// pages/api/interaction/interaction.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    array: [
-      'interaction',
-    ]
-  },
-  enterView: function (e) {
-    console.log(e.currentTarget.dataset.text)
-    let text = e.currentTarget.dataset.text
-    let name = '../api/' + text + '/' + text
-    wx.navigateTo({
-      url: name,
-    })
+
   },
 
   /**

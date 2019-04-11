@@ -9,7 +9,8 @@
     "pages/video/video",
     "pages/button/button",
     "pages/checkbox/checkbox",
-    "pages/api/api"
+    "pages/api/api",
+    "pages/api/interaction/interaction"
   ],
   "window": {
     "backgroundTextStyle": "light",
