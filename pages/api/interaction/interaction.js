@@ -6,8 +6,9 @@ Page({
    */
   data: {
     array: [
-      '显示Toast',
-      '显示Loading'
+      '显示消息提示框',
+      '显示Loading提示框',
+      '显示模拟对话框'
     ]
   },
 
@@ -19,6 +20,9 @@ Page({
         break
       case 1:
         this.showLoading()
+        break
+      case 2:
+        this.showModal()
         break
       default:
         break
@@ -43,6 +47,20 @@ Page({
     setTimeout(function() {
       wx.hideLoading()
     }, 2000)
+  },
+
+  showModal: function() {
+    wx.showModal({
+      title: '这是一个标题',
+      content: '这是展示的内容',
+      success: function(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
 
   /**
