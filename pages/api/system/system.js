@@ -1,22 +1,11 @@
-// pages/api/api.js
+// pages/api/system/system.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    array: [
-      'system',
-      'interaction',
-    ]
-  },
-  enterView: function (e) {
-    console.log(e.currentTarget.dataset.text)
-    let text = e.currentTarget.dataset.text
-    let name = '../api/' + text + '/' + text
-    wx.navigateTo({
-      url: name,
-    })
+
   },
 
   /**

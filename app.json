@@ -10,7 +10,8 @@
     "pages/button/button",
     "pages/checkbox/checkbox",
     "pages/api/api",
-    "pages/api/interaction/interaction"
+    "pages/api/interaction/interaction",
+    "pages/api/system/system"
   ],
   "window": {
     "backgroundTextStyle": "light",
