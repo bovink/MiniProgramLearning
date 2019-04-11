@@ -1,2 +1,8 @@
 <!--pages/api/tabbar/tabbar.wxml-->
-<text>pages/api/tabbar/tabbar.wxml</text>
+<view>
+  <scroll-view class='scroll-view' scroll-y='true'>
+    <block wx:for='{{array}}' wx:key='*this'>
+      <view data-index='{{index}}' class='scroll-item' bindtap='tapItem'>{{item}}</view>
+    </block>
+  </scroll-view>
+</view>
