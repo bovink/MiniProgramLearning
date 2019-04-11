@@ -1,2 +1,4 @@
 <!--pages/api/system/system.wxml-->
-<text>pages/api/system/system.wxml</text>
+<view class='root'>
+  <text>{{text}}</text>
+</view>

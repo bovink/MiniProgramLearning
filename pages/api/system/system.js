@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    text: '获取信息中...'
   },
 
   /**
@@ -13,7 +13,6 @@ Page({
    */
   onLoad: function(options) {
     this.getSystemInfo()
-    this.getSystemInfoSync()
   },
 
   /**
@@ -21,7 +20,7 @@ Page({
    */
   getSystemInfo: function() {
     wx.getSystemInfo({
-      success(res) {
+      success: res => {
         console.log(res.model)
         console.log(res.pixelRatio)
         console.log(res.windowWidth)
@@ -29,8 +28,20 @@ Page({
         console.log(res.language)
         console.log(res.version)
         console.log(res.platform)
+
+        var info = 'model:' + res.model + '\n' +
+          'pixelRatio:' + res.pixelRatio + '\n' +
+          'windowWidth:' + res.windowWidth + '\n' +
+          'windowHeight:' + res.windowHeight + '\n' +
+          'language:' + res.language + '\n' +
+          'version:' + res.version + '\n' +
+          'platform:' + res.platform
+        this.setData({
+          text: info
+        })
       }
     })
+
   },
 
   /**
