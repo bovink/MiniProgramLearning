@@ -59,14 +59,24 @@ Page({
    * 设置TabBar样式
    */
   setTabBarStyle: function() {
-
+    wx.setTabBarStyle({
+      color: '#000000',
+      selectedColor: '#FF66C1',
+      backgroundColor: '#1E90FF',
+      borderStyle: 'white'
+    })
   },
 
   /**
    * 设置TabBarItem内容
    */
   setTabBarItem: function() {
-
+    wx.setTabBarItem({
+      index: 1,
+      text: '视图布局',
+      iconPath: '/icon/cookie.png',
+      selectedIconPath: '/icon/fruit.png'
+    })
   },
 
   /**
@@ -82,7 +92,9 @@ Page({
    * 隐藏红点
    */
   hideRedDot: function() {
-
+    wx.hideTabBarRedDot({
+      index: 0,
+    })
   },
 
   /**
@@ -113,7 +125,9 @@ Page({
    * 隐藏Text
    */
   hideText: function() {
-
+    wx.removeTabBarBadge({
+      index: 3,
+    })
   },
 
 })
