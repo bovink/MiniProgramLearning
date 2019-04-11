@@ -11,7 +11,8 @@
     "pages/checkbox/checkbox",
     "pages/api/api",
     "pages/api/interaction/interaction",
-    "pages/api/system/system"
+    "pages/api/system/system",
+    "pages/api/tabbar/tabbar"
   ],
   "window": {
     "backgroundTextStyle": "light",
