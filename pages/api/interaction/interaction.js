@@ -10,7 +10,7 @@ Page({
       '显示Loading'
     ]
   },
-  
+
   tapItem: function(e) {
     console.log(e)
     switch (e.currentTarget.dataset.index) {
@@ -26,8 +26,13 @@ Page({
   },
 
   showToast: function() {
-    console.log('点击0')
-
+    wx.showToast({
+      title: '这是一个Toast',
+      icon: 'loading',
+      image: '/icon/icon.png',
+      duration: 3000,
+      mask: true
+    })
   },
 
   showLoading: function() {
