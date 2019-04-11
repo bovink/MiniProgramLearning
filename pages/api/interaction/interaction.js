@@ -1,6 +1,6 @@
 // pages/api/interaction/interaction.js
 Page({
-
+  // wx.showLoading 和 wx.showToast 同时只能显示一个
   /**
    * 页面的初始数据
    */
@@ -31,14 +31,18 @@ Page({
       icon: 'loading',
       image: '/icon/icon.png',
       duration: 3000,
-      mask: true
+      mask: true // 防止触摸穿透
     })
   },
 
   showLoading: function() {
-    console.log('点击1')
-
-
+    wx.showLoading({
+      title: '显示加载中',
+      mask: true
+    })
+    setTimeout(function() {
+      wx.hideLoading()
+    }, 2000)
   },
 
   /**
