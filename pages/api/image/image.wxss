@@ -1,1 +1,17 @@
 /* pages/api/image/image.wxss */
+.scroll-view {
+  width: 100%;
+  height: 100%;
+}
+
+/* align-items:center表示垂直居中 */
+
+/* justify-content:center表示水平居中 */
+
+.scroll-item {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

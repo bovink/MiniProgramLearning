@@ -8,7 +8,7 @@ Page({
     array: [
       'system',
       'interaction',
-      'tabbar'
+      'image'
     ]
   },
   enterView: function (e) {

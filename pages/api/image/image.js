@@ -5,62 +5,65 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array: [
+      '保存图片到系统相册',
+      '预览图片',
+      '获取图片信息'
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  tapItem: function(e) {
+    console.log(e)
+    switch (e.currentTarget.dataset.index) {
+      case 0:
+        this.saveImage()
+        break
+      case 1:
+        this.previewImage()
+        break
+      case 2:
+        this.getImageInfo()
+        break
+      case 3:
+        break
+      default:
+        break
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  saveImage: function() {
+    wx.saveImageToPhotosAlbum({
+      filePath: '/icon/icon.png',
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  previewImage: function() {
+    wx.previewImage({
+      urls: [
+        '/icon/icon.png',
+        '/icon/fruit.png',
+        '/icon/cookie.png'
+      ],
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getImageInfo: function() {
+    wx.getImageInfo({
+      src: '/icon/cookie.png',
+      success: res => {
+        console.log(res.width)
+        console.log(res.height)
+        console.log(res.path)
+        console.log(res.orientation)
+        console.log(res.type)
+      }
+    })
   }
 })
