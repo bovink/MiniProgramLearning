@@ -12,7 +12,8 @@
     "pages/api/api",
     "pages/api/interaction/interaction",
     "pages/api/system/system",
-    "pages/api/tabbar/tabbar"
+    "pages/api/tabbar/tabbar",
+    "pages/api/image/image"
   ],
   "window": {
     "backgroundTextStyle": "light",
