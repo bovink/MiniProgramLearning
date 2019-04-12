@@ -71,8 +71,13 @@ Page({
 
   compressImage: function() {
     wx.compressImage({
-      src: '/icon/fruit.png',
-      quality: 50
+      src: '/icon/image.jpg',
+      quality: 50,
+      success: tempFilePath => {
+        console.log(tempFilePath)
+        console.log(tempFilePath.tempFilePath)
+        
+      }
     })
   }
 
