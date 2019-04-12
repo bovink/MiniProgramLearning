@@ -51,7 +51,7 @@ Page({
       urls: [
         '/icon/icon.png',
         '/icon/fruit.png',
-        '/icon/cookie.png'
+        '/icon/image.jpg'
       ],
     })
   },
@@ -76,7 +76,15 @@ Page({
       success: tempFilePath => {
         console.log(tempFilePath)
         console.log(tempFilePath.tempFilePath)
-        
+        wx.previewImage({
+          urls: [
+            tempFilePath.tempFilePath,
+            '/icon/image.jpg'
+          ],
+        })
+        wx.saveImageToPhotosAlbum({
+          filePath: tempFilePath.tempFilePath,
+        })
       }
     })
   }
