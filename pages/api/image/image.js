@@ -8,7 +8,8 @@ Page({
     array: [
       '保存图片到系统相册',
       '预览图片',
-      '获取图片信息'
+      '获取图片信息',
+      '压缩图片'
     ]
   },
 
@@ -32,6 +33,7 @@ Page({
         this.getImageInfo()
         break
       case 3:
+        this.compressImage()
         break
       default:
         break
@@ -65,5 +67,13 @@ Page({
         console.log(res.type)
       }
     })
+  },
+
+  compressImage: function() {
+    wx.compressImage({
+      src: '/icon/fruit.png',
+      quality: 50
+    })
   }
+
 })
