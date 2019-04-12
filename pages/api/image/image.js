@@ -9,7 +9,9 @@ Page({
       '保存图片到系统相册',
       '预览图片',
       '获取图片信息',
-      '压缩图片'
+      '压缩图片',
+      '从客户端会话选择文件',
+      '从本地相册选择图片或使用相机拍照'
     ]
   },
 
@@ -34,6 +36,12 @@ Page({
         break
       case 3:
         this.compressImage()
+        break
+      case 4:
+        this.chooseMessageFile()
+        break
+      case 5:
+        this.chooseImage()
         break
       default:
         break
@@ -87,6 +95,24 @@ Page({
         })
       }
     })
-  }
+  },
 
+  chooseMessageFile: function() {
+    wx.chooseMessageFile({
+      count: 3,
+      type: 'image'
+    })
+  },
+
+  chooseImage: function() {
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+      }
+    })
+  }
 })
